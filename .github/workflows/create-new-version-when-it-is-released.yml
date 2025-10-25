@@ -18,9 +18,9 @@ permissions:
   pull-requests: write
 
 env:
-  package_name: "{{GITHUB_REPO}}"
-  schema_registry_url: "https://raw.githubusercontent.com/{{GITHUB_ORG}}/{{SCHEMAS_REPO}}/refs/heads/master/schemas.json"
-  schema_name: "{{API_NAME}}"
+  package_name: "empty-lightweight-client"
+  schema_registry_url: "https://raw.githubusercontent.com/lightweight-clients/schemas/refs/heads/master/schemas.json"
+  schema_name: "empty"
 
 jobs:
   compare-versions:
@@ -58,7 +58,7 @@ jobs:
       - name: Checkout the generator repository
         uses: actions/checkout@v3
         with:
-          repository: '{{GITHUB_ORG}}/${{ env.package_name }}-generator'
+          repository: 'lightweight-clients/${{ env.package_name }}-generator'
           path: generator
 
       - name: Run the generator

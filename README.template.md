@@ -1,11 +1,11 @@
-# {{FULL_PROJECT_NAME}}
+# Empty Lightweight Client
 
-[![NPM Version](https://img.shields.io/npm/v/{{NPM_PROJECT_NAME}})](https://www.npmjs.com/package/{{NPM_FULL_PROJECT_NAME}})
-[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2F{{GITHUB_ORG}}%2F{{GITHUB_REPO}}%2Factions%2Fworkflows%2Fcreate-new-version-when-it-is-released.yml%2Fruns%3Fstatus%3Dcompleted%26per_page%3D1&query=%24.workflow_runs%5B0%5D.run_started_at&style=flat&label=Last%20API%20version%20check)](https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}/actions/workflows/create-new-version-when-it-is-released.yml)
-![NPM Downloads](https://img.shields.io/npm/dm/{{NPM_FULL_PROJECT_NAME}})
-![GitHub License](https://img.shields.io/github/license/{{GITHUB_ORG}}/{{GITHUB_REPO}})
+[![NPM Version](https://img.shields.io/npm/v/empty-lightweight-client)](https://www.npmjs.com/package/@lightweight-clients/empty-lightweight-client)
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Flightweight-clients%2Fempty-lightweight-client%2Factions%2Fworkflows%2Fcreate-new-version-when-it-is-released.yml%2Fruns%3Fstatus%3Dcompleted%26per_page%3D1&query=%24.workflow_runs%5B0%5D.run_started_at&style=flat&label=Last%20API%20version%20check)](https://github.com/lightweight-clients/empty-lightweight-client/actions/workflows/create-new-version-when-it-is-released.yml)
+![NPM Downloads](https://img.shields.io/npm/dm/@lightweight-clients/empty-lightweight-client)
+![GitHub License](https://img.shields.io/github/license/lightweight-clients/empty-lightweight-client)
 
-This is lightweight client for {{PROJECT_NAME}}. It contains only methods and types
+This is a lightweight client for the Empty API. It contains only methods and types
 and exports only `fetch` call to make requests.
 
 It supports only `application/json` content type and does not support file uploads.
@@ -15,7 +15,7 @@ You can also upload files using another approach and pass the file ID to the met
 ## Installation
 
 ```bash
-npm install {{NPM_FULL_PROJECT_NAME}}
+npm install @lightweight-clients/empty-lightweight-client
 ```
 
 ## Usage
@@ -23,21 +23,19 @@ npm install {{NPM_FULL_PROJECT_NAME}}
 ### Examples
 
 ```typescript
-import { client_setClientToken, getMe } from '{{NPM_FULL_PROJECT_NAME}}';
-
-client_setClientToken('123:helloworld');
+import { sample } from '@lightweight-clients/empty-lightweight-client';
 
 const main = async () => {
-    const me = await getMe();
-    console.log(me);
+    const result = sample();
+    console.log(result);
 };
 
 main();
 ```
 
-The library provides 2 groups of methods:
+The library provides methods:
 
-- request methods: `getMe`, `sendMessage`, etc. These methods are used to make requests to the TODO API.
+- request methods: `sample`, etc. These methods are used to make requests to the Empty API.
 - `client_*`: methods for configuring the client.
 
 #### `client_*` Methods

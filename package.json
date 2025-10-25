@@ -1,12 +1,14 @@
 {
-  "name": "{{NPM_FULL_PROJECT_NAME}}",
-  "version": "TODO VERSION",
-  "description": "TODO DESCRIPTION",
+  "name": "@lightweight-clients/empty-lightweight-client",
+  "version": "0.0.1",
+  "description": "A lightweight client example built from the template.",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [
-    "TODO KEYWORDS",
+    "example",
+    "empty",
+    "api",
     "fetch",
     "llrt",
     "async",
@@ -31,13 +33,13 @@
   "type": "module",
   "author": "HRAshton",
   "license": "MIT",
-  "homepage": "https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}",
+  "homepage": "https://github.com/lightweight-clients/empty-lightweight-client",
   "repository": {
     "type": "git",
-    "url": "https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}"
+    "url": "https://github.com/lightweight-clients/empty-lightweight-client"
   },
   "bugs": {
-    "url": "https://github.com/{{GITHUB_ORG}}/{{GITHUB_REPO}}/issues"
+    "url": "https://github.com/lightweight-clients/empty-lightweight-client/issues"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
