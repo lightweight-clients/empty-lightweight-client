@@ -22,4 +22,4 @@ jobs:
       - name: Update npm
         run: npm install -g npm@latest
       - run: npm ci
-      - run: npm publish --access public  # Also runs `prepack` script
+      - uses: JS-DevTools/npm-publish@v4  # Also runs `prepack` script
