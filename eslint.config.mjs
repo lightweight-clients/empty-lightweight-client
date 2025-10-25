@@ -54,7 +54,7 @@ export default [
     'plugin:@typescript-eslint/recommended',
   ),
 
-  // Main code
+  // File-specific config for TypeScript
   {
     files: ['src/**/*.ts'],
     languageOptions: {
@@ -74,9 +74,9 @@ export default [
     },
   },
 
-  // Test files
+  // File-specific config for TypeScript
   {
-    files: ['tests/**/*.ts'],
+    files: ['tests/**/*.ts', 'src/generator/**/*.ts'],
     languageOptions: {
       parser: tsParser,
       parserOptions: {
